@@ -41,9 +41,53 @@
         .flex-container {
             display: flex;
             flex-direction: row;
-            background-color: #006868;
             justify-content: space-around;
+        }
+
+        .col-1 {
+            background-color: #006868;
+            color: white;
+            width: 50%;
             padding: 20px;
+        }
+
+        .col-2 {
+            background-color: #008789;
+            width: 50%;
+            padding: 20px;
+        }
+
+        .col-1-title {
+            font-size: 19px;
+            font-weight: 400;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .value {
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .per-month {
+            font-size: 14px;
+            font-style: italic;
+            margin-left: 16px;
+        }
+
+        .button {
+            width: 100%;
+            padding: 16px 32px;
+            background-color: #CCCCCC;
+            color: #006868;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            margin-top: 26px;   
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #E9E9E9;
         }
     </style>
 </head>
@@ -56,8 +100,16 @@
             Tenha suporte da nossa equipe e cresça mais rápido na sua carreira.</div>
         </div>
         <div class="flex-container">
-            <div>Coluna 1</div>
-            <div>Coluna 2</div>
+            <div class="col-1">
+                <div class="col-1-title">Assinatura mensal:</div>
+                <div>
+                    <span class="value">R$ 99,99</span>
+                    <span class="per-month">por mês.</span>
+                </div>
+                <div>Cancele a qualquer momento.</div>
+                <button class="button">Assine Agora</button>
+            </div>
+            <div class="col-2">Coluna 2</div>
         </div>
     </div>
 </body>
