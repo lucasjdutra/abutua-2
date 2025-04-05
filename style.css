@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-    padding: 2.5rem;
+    padding: 0.9rem;
 }
 
 .header-title {
@@ -44,6 +44,15 @@ body {
     padding: 1.25rem;
 }
 
+.col-cadastro {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+}
+
 .col-2 {
     background-color: #008789;
     color: white;
@@ -69,7 +78,7 @@ body {
     margin-left: 1rem;
 }
 
-.button {
+button {
     width: 100%;
     padding: 1rem 2rem;
     background-color: #CCCCCC;
@@ -80,12 +89,33 @@ body {
     margin-top: 26px;   
     cursor: pointer;
 }
-.button:hover {
+
+button:hover {
     background-color: #E9E9E9;
 }
 
 .icon {
     text-align: center;
+}
+
+.input {
+    font-size: 1.2rem;
+    width:100%;
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    margin: 10px;
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #008789;
+}
+
+.voltar {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: white;
 }
 
 @media screen and (max-width: 620px) {
@@ -104,5 +134,9 @@ body {
 
     .container {
         width: 95%;
+    }
+
+    .header {
+        padding: 15px;
     }
 }
